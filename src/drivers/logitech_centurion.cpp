@@ -22,6 +22,7 @@
 #include "drivers.h"
 #include "logitech_centurion.h"
 
+#include <algorithm>
 #include <cstdio>
 
 namespace {
