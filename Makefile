@@ -102,6 +102,8 @@ test: test-update-core test-update-win test-update-signature
 	./build/galaxy_buds_protocol_test.exe
 	$(CXX) -std=c++17 -O2 -Wall tests/logitech_g435_0adf_test.cpp -o build/logitech_g435_0adf_test.exe
 	./build/logitech_g435_0adf_test.exe
+	$(CXX) -std=c++17 -O2 -Wall tests/logitech_centurion_test.cpp -o build/logitech_centurion_test.exe
+	./build/logitech_centurion_test.exe
 	$(CXX) -std=c++17 -O2 -Wall -Isrc tests/xenta_protocol_test.cpp src/drivers/xenta_protocol.cpp -o build/xenta_protocol_test.exe
 	./build/xenta_protocol_test.exe
 	$(CXX) -std=c++17 -O2 -Wall tests/labels_test.cpp src/labels.cpp -o build/labels_test.exe

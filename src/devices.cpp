@@ -108,6 +108,7 @@ std::vector<DeviceStatus> PollAllDevices() {
     PollBarracudaPro(ctx);   // before the generic Razer driver as well
     PollHyperX(ctx);
     PollLogitechG435(ctx);  // before the HID++ driver, which shares the vendor id
+    PollLogitechG321(ctx);  // G321 LIGHTSPEED Centurion, before the HID++ driver
     PollAstro(ctx);
     PollLogitech(ctx);
     PollRazer(ctx);
